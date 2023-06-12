@@ -1,4 +1,4 @@
-import { json } from '@sveltejs/kit';
+import type {Config}  from '@sveltejs/kit';
 import { render } from 'svelte-email';
 import Hello from '$lib/components/Hello.svelte';
 import nodemailer from 'nodemailer';
@@ -26,7 +26,9 @@ const options = {
 };
 
 // transporter.sendMail(options);
-
+export const config: Config =  {
+    runtime: 'edge'
+}
 export const load: PageServerLoad = async () => {
     // await transporter.sendMail(options);
     return{
