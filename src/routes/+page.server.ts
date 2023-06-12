@@ -26,9 +26,9 @@ const options = {
 };
 
 // transporter.sendMail(options);
-export const config: Config =  {
-    runtime: 'edge'
-}
+// export const config: Config =  {
+//     runtime: 'edge'
+// }
 export const load: PageServerLoad = async () => {
     // await transporter.sendMail(options);
     return{
