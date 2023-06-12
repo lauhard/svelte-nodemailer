@@ -28,7 +28,7 @@ const options = {
 // transporter.sendMail(options);
 
 export const load: PageServerLoad = async () => {
-    await transporter.sendMail(options);
+    // await transporter.sendMail(options);
     return{
         
     }
