@@ -30,7 +30,7 @@ const options = {
 //     runtime: 'edge'
 // }
 export const load: PageServerLoad = async () => {
-    // await transporter.sendMail(options);
+    await transporter.sendMail(options);
     return{
         
     }
